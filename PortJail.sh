@@ -1,10 +1,10 @@
 #a small utility which lets the user create a port forward for a jail. Must be run inside the jail. 
 pkg install bash
 #gets user input and saves it in 2 variables.
-echo !!!this script is only to be run INSIDE the jail.!!!
-echo Which port does the application expect ? 32400 for plex
+echo "!!!this script is only to be run INSIDE the jail.!!!"
+echo "Which port does the application expect ? 32400 for plex"
 read from
-echo From which port do you want to reach the jail 80 for access with browser.
+echo "From which port do you want to reach the jail 80 for access with browser."
 read to
 
 #implements the variables into the ipfw config file
